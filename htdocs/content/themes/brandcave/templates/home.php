@@ -9,6 +9,25 @@
 
 get_header();
 ?>
+<div class='blurred-container'>
+  <div id="navbar-full">
+    <div id="navbar">
+      <?php include (TEMPLATEPATH . '/nav-main.php'); ?>
+          <div class="container">
+            <div class="motto">
+              <h3>We Love To</h3>
+              <h1>Create Digital Experiences</h1>
+              <p>Our clients love us because we integrate video, design, web development and content creation into comprehensive marketing strategies.</p>
+              <h4><a a href="//fast.wistia.net/embed/iframe/g8uzytxr8v?popover=true" class="wistia-popover[height=506,playerColor=299abe,width=900]">watch video</a></h4>
+            </div>
+            <div class="down-button">
+              <a href="#one"><img class="unveil" src="<?php bloginfo(template_url); ?>/img/Down-Arrow.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--  end navbar -->
+</div> <!-- end menu-dropdown -->
 <div class="submain">
     <div class="container">
         <h4>TRUSTED BY SOME EXCELLENT BRANDS</h4>

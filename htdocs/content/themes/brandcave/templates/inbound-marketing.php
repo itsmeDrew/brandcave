@@ -1,66 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">	
-    <link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" />
-	<link href="../assets/css/style.css" rel="stylesheet" />  
-    
-    <!--     Font Awesome     -->
-    <link href="../bootstrap3/css/font-awesome.css" rel="stylesheet"> 
-</head>
-<body>
+<?php
+/**
+ * Template Name: Inbound Marketing
+ *
+ * @package Brandcave
+ * @subpackage brandcave
+ * @since Brandcave 1.0.1
+ */
+
+get_header();
+?>
 <div class='inbound'>
 <div id="navbar-full">
     <div id="navbar">
-    <!--    
-        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
-        -->
-        <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
-          
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="http://brandcave.co"><img class="unveil" src="../assets/img/logo.png"></a>
-            </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-              <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capabilities <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="inbound-marketing.html">Inbound Marketing</a></li>
-                        <li><a href="video-production.html">Video Production</a></li>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="branding-solutions">Branding Solutions</a></li>
-                      </ul>
-                </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog">Blog</a></li>
-                    <li><button href="contact" class="btn btn-round btn-default">Meet Us</button></li>
-                  <li><p>1 (800) 561-8790</p></li>
-               </ul>
-              
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <div class="container inbound-intro">   
+      <?php include (TEMPLATEPATH . '/nav-main.php'); ?>
+        <div class="container inbound-intro">
             <p>Over the past decade, buyers have drastically transformed how they make purchase decisions. By some estimates, even 80 percent of B2B purchase cycles are completed before the buyer contacts sales. That's where inbound marketing comes in. By creating relevant and high-quality content, and then distributing that content through various online channels, inbound marketing can produce more than 50% more leads than traditional marketing practices.</p>
             <div class="clearfix"></div>
             <h6>Inbound Marketing Services</h6>
         </div>
             <div class="line"></div>
             <div class="line2"></div>
-        </div>  
+        </div>
         </div>
         </div>
     </div><!--  end navbar -->
@@ -107,9 +67,9 @@
             <h3>Advertising and PPC</h3>
             <p>Increase site visitors and drive sales to already warm leads.</p>
         </div>
-    </div>    
-</div>    
-<div class="seo-section">   
+    </div>
+</div>
+<div class="seo-section">
     <div class="container">
         <div class="col-md-6 col-sm-6">
             <h2>Generate More Leads Online</h2>
@@ -140,67 +100,8 @@
             <input type="text" value="" placeholder="Can we get your digits?" class="form-control">
             <input type="text" value="" placeholder="What's your company?" class="form-control">
             <button href="#" class="btn btn-info btn-fill">Let's Talk</button>
-        </div>    
-    </div>
-</div>    
-<div class="parallax-pro">
-    <div class="container">
-        <div class="footer-text row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-                <h4>Office</h4>
-                <p>2111 North Austin Ave<br />
-                #7201 <br />
-                Georgetown, TX 78626<br />
-                1 (800) 561-8790<br />
-                hello@brandcave.co
-                </p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
-                <h4>CAPABILITIES</h4>
-                <p><a href="inbound-marketing.html">Inbound Marketing</a>
-                <br />
-                <a href="web-development.html">Web Development</a>
-                <br />
-                <a href="video-production.html">Video Production</a>
-                <br />
-                <a href="branding-solutions">Branding Solutions</a>
-                </p>    
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-2">
-                <h4>ABOUT</h4>
-                <p><a href="about.html">About</a>
-                <br />
-                <a href="blog">Blog</a>
-                <br />
-                <a href="contact">Contact</a>
-                <br />
-                <a href="terms">Terms</a>
-                </p>    
-            </div>
-        </div>
-        <div class="space-60"></div>
-        <div class="row">
-             <div class="col-md-12">
-                <div class="credits">
-                    <a href="http://brandcave.co"><img class="footer-logo unveil" src="../assets/img/logo-blk.png"></a>
-                   A small but perfectly formed inbound marketing agency.
-                    <div class="elevator">
-                        <img class="unveil" src="../assets/img/Up.png">
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-
 </div>
 
-</body>
-
-    <script src="../jquery/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
-	<script src="../assets/js/gsdk-bootstrapswitch.js"></script>
-	<script charset="ISO-8859-1" src="http://fast.wistia.com/assets/external/popover-v1.js"></script>
-   <script src="../assets/js/unveil.js" type="text/javascript"></script>
-    <script src="../assets/js/custom.js"></script>
-
-</html>
+<?php get_footer(); ?>
