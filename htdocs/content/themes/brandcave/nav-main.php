@@ -22,15 +22,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
               <ul class="nav navbar-nav navbar-right">
-                <!-- <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capabilities <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="capabilities/inbound-marketing.html">Inbound Marketing</a></li>
-                        <li><a href="capabilities/video-production.html">Video Production</a></li>
-                        <li><a href="capabilities/web-development.html">Web Development</a></li>
-                        <li><a href="capabilities/branding-solutions">Branding Solutions</a></li>
-                      </ul>
-                </li> -->
                   <?php wp_list_pages('sort_column=menu_order&depth=2&title_li='); ?>
                   <li><p>1 (800) 561-8790</p></li>
                </ul>
