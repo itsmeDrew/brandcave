@@ -1593,6 +1593,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     color: #0397d6;
     margin-top:25px;
     margin-bottom:100px;
+    display: block;
 }
 .blog-section .post-text {
     float:left;

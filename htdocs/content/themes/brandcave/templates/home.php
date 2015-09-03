@@ -88,39 +88,19 @@ get_header();
             <h4>Latest Blog Posts</h4>
             <h2>Our latest rants may actually be worth reading.</h2>
         </div>
+        <?php $query = new WP_Query(array( 'posts_per_page' => 2)); ?>
+        <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
         <div class="col-md-4 col-sm-4">
             <div class="calendar">
                 <h5>O4</h5>
                 <h6>FEB</h6>
             </div>
             <div class="post-text">
-                <h5><a href="#">How to Foster a Startup Culture: Part 2</a></h5>
-                <p>The term whale sometimes refers to all cetaceans, but more often it excludes dolphins and porpoises, which are smaller members of the suborder Odontoceti.</p>
-                <button href="#" class="btn btn-round btn-default">Read More</button>
+                <h5><a href="#"><?php the_title(); ?></a></h5>
+                <p><?php the_excerpt(); ?></p>
             </div>
         </div>
-        <div class="col-md-4 col-sm-4">
-            <div class="calendar">
-                <h5>O4</h5>
-                <h6>FEB</h6>
-            </div>
-            <div class="post-text">
-                <h5><a href="#">6 SXSW Flatstock Artists Talk Design and Inspiration</a></h5>
-                <p>The term whale sometimes refers to all cetaceans, but more often it excludes dolphins and porpoises, which are smaller members of the suborder Odontoceti.</p>
-                <button href="#" class="btn btn-round btn-default">Read More</button>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-            <div class="calendar">
-                <h5>O4</h5>
-                <h6>FEB</h6>
-            </div>
-            <div class="post-text">
-                <h5><a href="#">The weird relationship between startups and scalability</a></h5>
-                <p>The term whale sometimes refers to all cetaceans, but more often it excludes dolphins and porpoises, which are smaller members of the suborder Odontoceti.</p>
-                <button href="#" class="btn btn-round btn-default">Read More</button>
-            </div>
-        </div>
+        <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
 </div>
 <div class="cta-section">

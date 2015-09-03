@@ -336,3 +336,17 @@ add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
+
+//the excerpt revised
+
+function brandcave_excerpt_length( $length ) {
+	return 20;
+}
+
+function new_excerpt_more($more) {
+       global $post;
+	return '... <button href="' . get_permalink($post->ID) . '" class="btn btn-round btn-default">Read More</button>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+add_filter( 'excerpt_length', 'brandcave_excerpt_length', 999 );
