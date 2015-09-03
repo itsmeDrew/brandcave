@@ -88,12 +88,12 @@ get_header();
             <h4>Latest Blog Posts</h4>
             <h2>Our latest rants may actually be worth reading.</h2>
         </div>
-        <?php $query = new WP_Query(array( 'posts_per_page' => 2)); ?>
+        <?php $query = new WP_Query(array( 'posts_per_page' => 3)); ?>
         <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
         <div class="col-md-4 col-sm-4">
             <div class="calendar">
-                <h5>O4</h5>
-                <h6>FEB</h6>
+                <h5><?php the_time('d'); ?></h5>
+                <h6 class="js-abbreviate"><?php the_time('F'); ?></h6>
             </div>
             <div class="post-text">
                 <h5><a href="#"><?php the_title(); ?></a></h5>
