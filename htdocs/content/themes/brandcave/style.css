@@ -1190,6 +1190,50 @@ div.wpcf7-mail-sent-ok
     color: #333333;
 }
 
+/****  ABOUT PAGE ****/
+.about-block {
+    margin: 0;
+    text-align: center;
+}
+.about-row {
+    margin: 0;
+}
+.about-block--small {
+    height: 300px;
+    padding: 100px;
+}
+.about-block--large {
+    height: 600px;
+    padding: 30px;
+}
+.about-block h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+.about-block.block--blue h2 {
+    color: white;
+}
+.about-block.block--white h2 {
+    color: #3D3D3D;
+    text-align: left;
+}
+.about-block p {
+    text-align: left;
+}
+/* row 1 */
+.about-block__cody {
+    background: url(img/about-cody.png) no-repeat;
+    background-size: 100%;
+}
+.about-title {
+    color: #9a9a9a;
+}
+/* row 2 */
+.block--blue {
+    background-color: #2295B5;
+}
+
 /*   EXTRA SHIT  */
 /* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
