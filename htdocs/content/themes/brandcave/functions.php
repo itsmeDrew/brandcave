@@ -345,7 +345,7 @@ function brandcave_excerpt_length( $length ) {
 
 function new_excerpt_more($more) {
        global $post;
-	return '... <button href="' . get_permalink($post->ID) . '" class="btn btn-round btn-default">Read More</button>';
+	return '... <a href="' . get_permalink($post->ID) . '" class="btn btn-round btn-default">Read More</a>';
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');

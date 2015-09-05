@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: About
  *
  * @package Brandcave
  * @subpackage brandcave
@@ -15,15 +15,23 @@ get_header();
       <?php include (TEMPLATEPATH . '/nav-main.php'); ?>
           <div class="container">
             <div class="hero-container">
-                <div class="motto">
-                  <h3>We Love To</h3>
-                  <h1>Create Digital Experiences</h1>
-                  <p>Our clients love us because we integrate video, design, web development and content creation into comprehensive marketing strategies.</p>
-                  <h4><a href="//fast.wistia.net/embed/iframe/g8uzytxr8v?popover=true" class="wistia-popover[height=506,playerColor=299abe,width=900]">watch video</a></h4>
-                </div>
-                <div class="down-button">
-                  <a href="#one"><img class="unveil" src="<?php bloginfo(template_url); ?>/img/Down-Arrow.png"></a>
-                </div>
+              <div class="motto hero-container__two-col--left">
+                <h3>The fancy term is</h3>
+                <h1>integrated</h1>
+                <h1>digital</h1>
+                <h1>marketing</h1>
+                <h3>but it's just fun and</h3>
+                <h3>games to us</h3>
+              </div>
+              <div class="about-desc hero-container__two-col--right">
+                <p class="hero-container__desc">
+                  We help businesses share their story digitally by integrating web design, video production, content and social media into meaningful customer experiences. We get marketing because we get people, and our work is corroborated by measurable objectives and KPIs. From the neighborhood bookstore to the Inc. 500 recipient, we are helping companies disrupt everything from our small hometown of Georgetown, Tx.
+                </p>
+                <p class="hero-container__desc">
+                  Our team obssesses over the big picture and being particular on the particulars.
+                </p>
+                <h4><a href="#">meet our team</a></h4>
+              </div>
             </div>
           </div>
         </div>
@@ -126,7 +134,12 @@ get_header();
             <p>We understand! Feel free to contact us toll-free at 1-800-279-1455 or emailing <a href="mailto:hello@brandcave.co">hello@brandcave.co</a>. We can’t guarantee that we’ll answer after 6pm (our wives hate when we do that) but we’ll return your message as soon as possible.</p>
         </div>
         <div class="col-md-offset-1 col-md-6">
-            <?php echo do_shortcode( '[contact-form-7 id="24" title="Home Contact Form"]' ); ?>
+            <input type="text" value="" placeholder="What's your name?" class="form-control">
+            <input type="text" value="" placeholder="What's your email?" class="form-control">
+            <input type="text" value="" placeholder="Can we get your digits?" class="form-control">
+            <input type="text" value="" placeholder="What's the name of your company?" class="form-control">
+            <textarea type="type" value="" placeholder="Tell us a little about yourself. By the way, when's the best time to call you?" class="form-control"></textarea>
+            <button href="#" class="btn btn-info btn-fill">Let's Talk</button>
         </div>
     </div>
 </div>
