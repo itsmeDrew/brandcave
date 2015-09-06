@@ -1191,47 +1191,101 @@ div.wpcf7-mail-sent-ok
 }
 
 /****  ABOUT PAGE ****/
-.about-block {
+.about__block {
     margin: 0;
     text-align: center;
 }
+.about__block--small .about__block-inner {
+    position: relative;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    top:50%;
+}
 .about-row {
     margin: 0;
+    position: relative;
 }
-.about-block--small {
-    height: 300px;
+.about__block--small {
+    height: 400px;
     padding: 100px;
 }
-.about-block--large {
+.about__block--large {
     height: 600px;
     padding: 30px;
 }
-.about-block h2 {
+.about__block h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2em;
 }
-.about-block.block--blue h2 {
+.about__block.block--blue h2 {
     color: white;
+    margin: 0;
 }
-.about-block.block--white h2 {
+.about__block.block--white h2 {
     color: #3D3D3D;
     text-align: left;
 }
-.about-block p {
+.about__block p {
     text-align: left;
 }
 /* row 1 */
-.about-block__cody {
+.about__block__cody {
     background: url(img/about-cody.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 .about-title {
     color: #9a9a9a;
 }
+.about__btn--list {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    z-index: 10;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.about__btn--item {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.about__btn--img {
+    width: 120px;
+}
 /* row 2 */
 .block--blue {
     background-color: #2295B5;
+}
+/* row 3 */
+.about__cta--wrapper {
+    background: url(img/about-2.png) no-repeat;
+    background-size: cover;
+    padding: 100px;
+    margin: 0;
+}
+.about__cta--wrapper p {
+    color: white;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.about__cta--wrapper h1 {
+    color: #0397d6;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.about__cta--wrapper h1,
+.about__cta--wrapper h3 {
+    text-align: right;
 }
 
 /*   EXTRA SHIT  */
@@ -1315,7 +1369,7 @@ div.wpcf7-mail-sent-ok
 }
 }
 
-.blurred-container .motto h1{
+.blurred-container .motto h1 {
     color: #0397d6;
     font-size: 80px;
     font-weight: 600;
@@ -1355,7 +1409,8 @@ div.wpcf7-mail-sent-ok
 .page-template-about .motto h3 {
   text-align: right;
 }
-.page-template-about .motto h1 {
+.page-template-about .motto h1,
+.about__cta--wrapper h1 {
   font-size: 7em;
 }
 .page-template-home .motto h1,
@@ -1365,13 +1420,15 @@ div.wpcf7-mail-sent-ok
 .page-template-home .blurred-container .hero-container {
   margin-top: 250px;
 }
-.blurred-container .motto h3 {
+.blurred-container .motto h3,
+.about__cta--wrapper h3 {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.hero-container h4 a {
+.hero-container h4 a,
+.about__cta--wrapper h4 a {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
