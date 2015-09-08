@@ -126,8 +126,11 @@ $(document).scroll(function() {
 });
 
 // abbreviate months
+var _abbreviateEl = $('.js-abbreviate');
 
-setBlogMonth($('.js-abbreviate'));
+if (_abbreviateEl.html()) {
+    setBlogMonth(_abbreviateEl);
+}
 
 function abbreviate(str) {
     var _newMonthStr = str.substr(0, 3);

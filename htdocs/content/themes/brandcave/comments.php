@@ -23,22 +23,33 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
+		<h4 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'twentyfifteen' ),
+				printf( _nx( 'Comments (%1$s)', 'Comments (%1$s)', get_comments_number(), 'comments title', 'twentyfifteen' ),
 					number_format_i18n( get_comments_number() ), get_the_title() );
 			?>
-		</h2>
+		</h4>
 
 		<?php twentyfifteen_comment_nav(); ?>
 
 		<ol class="comment-list">
+		<?php $args = array(
+			'walker'            => null,
+			'max_depth'         => '',
+			'style'             => 'ul',
+			'callback'          => null,
+			'end-callback'      => null,
+			'type'              => 'all',
+			'reply_text'        => 'Reply',
+			'avatar_size'       => 32,
+			'reverse_top_level' => null,
+			'reverse_children'  => '',
+			'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
+			'short_ping'        => false,   // @since 3.6
+		  'echo'              => true     // boolean, default is true
+		); ?>
 			<?php
-				wp_list_comments( array(
-					'style'       => 'ol',
-					'short_ping'  => true,
-					'avatar_size' => 56,
-				) );
+				wp_list_comments($args);
 			?>
 		</ol><!-- .comment-list -->
 

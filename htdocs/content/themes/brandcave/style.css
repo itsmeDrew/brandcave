@@ -1291,6 +1291,7 @@ div.wpcf7-mail-sent-ok
 /*   EXTRA SHIT  */
 /* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
+/* home page */
 .page-template-home .blurred-container{
   position:relative;
   background-image: url('img/BG.jpg');
@@ -1302,7 +1303,10 @@ div.wpcf7-mail-sent-ok
   background-position: center center;
   background-repeat:no-repeat;
 }
-
+.page-template-home .blurred-container .hero-container {
+  margin-top: 250px;
+}
+/* about page */
 .page-template-about .blurred-container {
   position:relative;
   background-image: url('img/about-1.png');
@@ -1313,6 +1317,167 @@ div.wpcf7-mail-sent-ok
   background-size:cover;
   background-position: center center;
   background-repeat:no-repeat;
+}
+/* blog page */
+.page-template-blog .blurred-container {
+    position:relative;
+    background-image: url('img/blog-hero.jpg');
+    width:100%;
+    min-height:500px;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.page-template-blog .blurred-container .hero-container {
+    margin-top: 220px;
+}
+.page-template-blog .blurred-container .hero-container h1 {
+    font-size: 7em;
+}
+.blog-postings {
+    padding: 50px 30px;
+}
+.blog-postings .btn {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    display: block;
+    width: 110px;
+}
+.blog-posting__featured-image {
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+.blog-posting__overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+}
+.blog-posting__featured-image .blog-posting__title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    color: white;
+    z-index: 10;
+    font-size: 2em;
+    padding: 0 20px;
+}
+/* single page */
+.single-post {
+    background: #f4f4f4 !important;
+}
+.single-post .blurred-container {
+    position:relative;
+    width:100%;
+    min-height:500px;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    margin-bottom: 6rem;
+}
+.single-post .blurred-container .hero-container {
+    margin-top: 220px;
+}
+.single-post .blurred-container #navbar-full {
+    position: relative;
+    z-index: 10;
+}
+.single-post .blurred-container__overlay {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.blog-posting__content {
+    padding-bottom: 64px;
+    border-bottom: 1px solid #ddd;
+}
+.blog-posting__content p,
+.blog-posting__content ol {
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+/* comment form */
+.blog-posting__comments--wrapper {
+    padding-top: 64px;
+}
+.comment-form {
+    margin: 3rem 0;
+}
+.comment-form input[type=textarea],
+.comment-form input[type=url],
+.comment-form input[type=email],
+.comment-form input[type=text],
+.comment-form textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #eee;
+    box-shadow: none;
+}
+.comment-form input[type=submit] {
+    background-color: #1084FF;
+    border-color: #1084FF;
+    border-width: 2px;
+    border-radius: 4px;
+    margin-left: 0 !important;
+    font-weight: 800 !important;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.comment-form .form-submit {
+    display: inline-block;
+}
+.comment-form .comment-notes {
+    display: none;
+}
+.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 5rem;
+    background-color: rgba(255,255,255,0.6);
+}
+.comment {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+.comments-title {
+    margin: 0 0 2rem 0;
+}
+.comment-author .fn,
+.comment-author .fn a {
+    font-size: 18px;
+    color: #333333;
+    text-transform: capitalize;
+}
+.comment-author .says {
+    display: none;
+}
+.comment-metadata a {
+    color: #AEAEAE;
+    margin: .2rem 0 1rem 0;
+    display: inline-block;
+    font-size: 13px;
+}
+a.comment-reply-link {
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 8px 16px;
+    margin: 1rem 0;
+    display: inline-block;
 }
 @media (max-width: 991px){
     .blurred-container{
@@ -1416,9 +1581,6 @@ div.wpcf7-mail-sent-ok
 .page-template-home .motto h1,
 .page-template-home .motto h3 {
     text-align: left;
-}
-.page-template-home .blurred-container .hero-container {
-  margin-top: 250px;
 }
 .blurred-container .motto h3,
 .about__cta--wrapper h3 {
@@ -1910,7 +2072,7 @@ div.wpcf7-mail-sent-ok
     font-weight:600;
     letter-spacing:1px;
 }
-.cta-section button, .seo-section button {
+.cta-section button, .seo-section button, .comment-form input[type=submit] {
     height: 45px;
     padding-top:10px;
     border:none;

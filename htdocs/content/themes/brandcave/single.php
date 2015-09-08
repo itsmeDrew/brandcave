@@ -2,47 +2,50 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package Brandcave
+ * @subpackage brandcave
+ * @since Brandcave 1.0.1
  */
 
 get_header(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
+<?php if ($thumbnail[0]) : ?>
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
-
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
-
-		// End the loop.
-		endwhile;
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+<div class="blurred-container" style="background-image: url('<?php echo $thumbnail[0]; ?>')">
+  <div id="navbar-full">
+    <div id="navbar">
+      <?php include (TEMPLATEPATH . '/nav-main.php'); ?>
+      <div class="container">
+        <div class="hero-container">
+            <div class="motto">
+              <h3><?php the_title(); ?></h3>
+              <p>Posted on <?php the_time('D, M, Y'); ?></p>
+            </div>
+        </div>
+      </div>
+		</div>
+	</div>
+	<div class="blurred-container__overlay"></div>
+</div><!--  end navbar -->
+<?php endif; ?>
+<div id="one" class="main">
+	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+		<article class="blog-posting__content">
+			<?php the_content(); ?>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</article>
+	</div>
+	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+		<div class="blog-posting__comments--wrapper">
+			<?php
+			    if ( comments_open() || get_comments_number() ) :
+			      comments_template();
+			    endif;
+			?>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>
