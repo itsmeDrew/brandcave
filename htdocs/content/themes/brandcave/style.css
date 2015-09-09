@@ -488,6 +488,7 @@ input.wpcf7-submit:focus {
 }
 div.wpcf7-mail-sent-ok,
 div.wpcf7-validation-errors {
+    background-color: rgba(255,255,255,0.5);
     display: inline-block;
     width: 100%;
     padding: 2rem;
@@ -539,6 +540,9 @@ div.wpcf7-validation-errors {
 .navbar .btn{
     margin-top: 8px;
     margin-bottom: 8px;
+}
+.navbar .page_item.page-item-32 a {
+    padding: .9rem 1rem;
 }
 .navbar-default:not(.navbar-transparent) {
     background-color: rgba(255, 255, 255, 0.9);
@@ -2066,7 +2070,7 @@ a.comment-reply-link:hover {
 .blog-section .post-text {
     float:left;
     max-width:80%;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .blog-section .calendar {
     float:left;
@@ -2212,6 +2216,9 @@ a.comment-reply-link:hover {
 .contact-section a:hover {
     color: #000;
     font-weight:800;
+}
+.contact-section .wpcf7-form p {
+    margin-bottom: 10px;
 }
 .contact-section input[type=text],
 .contact-section input[type=url],

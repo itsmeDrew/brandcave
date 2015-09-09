@@ -143,6 +143,9 @@ function setBlogMonth(monthEl) {
     monthEl.html(_newHTML);
 }
 
+/* add class to navbar */
+
+$('.navbar-nav').find('.page-item-32').children('a').addClass('btn btn-round btn-default');
 
 
 
