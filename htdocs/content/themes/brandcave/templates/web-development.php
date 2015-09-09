@@ -63,11 +63,7 @@ get_header();
             <p>Every website represents thousands of decisions: what to include, what to exclude, which technologies to use and how to configure it. We’ll work with you to answer every single one of them. While web design can be a stressful process, we make every intention to hit all of your goals. We’ll begin by listening to you. Fill the form and a representative will contact you within 48 business hours.</p>
         </div>
         <div class="col-md-offset-1 col-md-6">
-            <input type="text" value="" placeholder="What's your name?" class="form-control">
-            <input type="text" value="" placeholder="What's your email?" class="form-control">
-            <input type="text" value="" placeholder="Can we get your digits?" class="form-control">
-            <input type="text" value="" placeholder="What's the name of your company?" class="form-control">
-            <button href="#" class="btn btn-info btn-fill">Let's Talk</button>
+            <?php echo do_shortcode( '[contact-form-7 id="36" title="Capabilities Form"]' ); ?>
         </div>
     </div>
 </div>

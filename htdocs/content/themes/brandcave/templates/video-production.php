@@ -42,11 +42,7 @@ get_header();
             <p>Thanks for your interest. If you’re looking to tell your story through video, give us an idea of what you’re trying to accomplish. After completing the form, we’ll contact you within 24 business hours with some fresh ideas. </p>
         </div>
         <div class="col-md-offset-1 col-md-6">
-            <input type="text" value="" placeholder="What's your name?" class="form-control">
-            <input type="text" value="" placeholder="What's your email?" class="form-control">
-            <input type="text" value="" placeholder="Can we get your digits?" class="form-control">
-            <input type="text" value="" placeholder="What's the name of your company?" class="form-control">
-            <button href="#" class="btn btn-info btn-fill">Let's Talk</button>
+            <?php echo do_shortcode( '[contact-form-7 id="36" title="Capabilities Form"]' ); ?>
         </div>
     </div>
 </div>

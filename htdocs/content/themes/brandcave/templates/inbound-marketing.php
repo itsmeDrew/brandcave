@@ -95,11 +95,7 @@ get_header();
             <p>At Brandcave, our team of search engine optimization experts, content writers, graphic designers, web developers and inbound marketers are always creating amazing inbound marketing strategies. Our clients appreciate us because we don’t miss calls and we always return emails. Want to talk with us about starting an inbound marketing campaign? Use the form to the right and we'll schedule a call with you within 48 hours.</p>
         </div>
         <div class="col-md-offset-1 col-md-6">
-            <input type="text" value="" placeholder="What's your name?" class="form-control">
-            <input type="text" value="" placeholder="What's your email?" class="form-control">
-            <input type="text" value="" placeholder="Can we get your digits?" class="form-control">
-            <input type="text" value="" placeholder="What's your company?" class="form-control">
-            <button href="#" class="btn btn-info btn-fill">Let's Talk</button>
+            <?php echo do_shortcode( '[contact-form-7 id="36" title="Capabilities Form"]' ); ?>
         </div>
     </div>
 </div>
