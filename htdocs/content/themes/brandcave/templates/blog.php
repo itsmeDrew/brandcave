@@ -33,10 +33,10 @@ get_header();
             <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
             <?php if ($thumbnail[0]) : ?>
               <div class="blog-posting__featured-image" style="background-image: url('<?php echo $thumbnail[0]; ?>')">
-                <div class="blog-posting__title">
+                <a href="<?php echo the_permalink(); ?>" class="blog-posting__title">
                     <?php the_title(); ?>
-                </div>
-                <div class="blog-posting__overlay"></div>
+                </a>
+                <a href="<?php echo get_permalink(); ?>" class="blog-posting__overlay"></a>
               </div>
             <?php endif; ?>
             <div class="post-text">
