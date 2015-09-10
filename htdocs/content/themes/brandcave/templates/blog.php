@@ -29,7 +29,7 @@ get_header();
     <div class="blog-postings">
         <?php $query = new WP_Query(array( 'posts_per_page' => 10)); ?>
         <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-sm-6 col-lg-4">
             <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
             <?php if ($thumbnail[0]) : ?>
               <div class="blog-posting__featured-image" style="background-image: url('<?php echo $thumbnail[0]; ?>')">

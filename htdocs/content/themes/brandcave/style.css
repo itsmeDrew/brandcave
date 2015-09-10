@@ -40,6 +40,7 @@ a{
 }
 a:hover, a:focus {
     color: #1084FF;
+    text-decoration: none;
 }
 a:focus, a:active,
 button::-moz-focus-inner,
@@ -1208,6 +1209,20 @@ div.wpcf7-validation-errors {
 }
 
 /****  ABOUT PAGE ****/
+.page-template-about .blurred-container .motto h1,
+.page-template-about .blurred-container .motto h3 {
+    line-height: 1;
+    margin: 0;
+}
+.page-template-about .blurred-container .motto h1 {
+  font-size: 7em;
+  text-align: right;
+}
+.page-template-about .blurred-container .motto h3 {
+  font-size: 3em;
+  text-align: right;
+  padding: 5px 0;
+}
 .about__block {
     margin: 0;
     text-align: center;
@@ -1227,9 +1242,25 @@ div.wpcf7-validation-errors {
     height: 400px;
     padding: 100px;
 }
-.about__block--large {
-    height: 600px;
-    padding: 30px;
+@media (min-width: 992px){
+    .about__block--large {
+        height: 600px;
+        padding: 30px;
+    }
+}
+@media (max-width: 991px){
+    .about__block__cody {
+        height: 400px;
+    }
+    .about__block--large {
+        padding: 70px 30px;
+    }
+    .block--white:nth-child(odd) {
+        background-color: #DDDDDD;
+    }
+    .block--blue:nth-child(odd) {
+        background-color: #227FB5;
+    }
 }
 .about__block h2 {
     text-transform: uppercase;
@@ -1284,7 +1315,7 @@ div.wpcf7-validation-errors {
 .about__cta--wrapper {
     background: url(img/about-2.png) no-repeat;
     background-size: cover;
-    padding: 100px;
+    padding: 100px 0;
     margin: 0;
 }
 .about__cta--wrapper p {
@@ -1295,7 +1326,7 @@ div.wpcf7-validation-errors {
 }
 .about__cta--wrapper h1 {
     color: #0397d6;
-    font-size: 80px;
+    font-size: 7em;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 5px;
@@ -1303,8 +1334,36 @@ div.wpcf7-validation-errors {
 .about__cta--wrapper h1,
 .about__cta--wrapper h3 {
     text-align: right;
+    margin: 0;
+    line-height: 1;
 }
-
+@media (max-width: 991px) {
+    .about__cta--wrapper {
+        background: url(img/about-2.png) no-repeat;
+        background-size: cover;
+        padding: 100px 20px;
+        margin: 0;
+    }
+    .about__cta--wrapper h1,
+    .about__cta--wrapper h3 {
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .about__btn--item {
+        width: 20%;
+        max-width: 120px;
+    }
+    .about__btn--img {
+        width: 100%;
+    }
+}
+@media (max-width: 499px) {
+    .about__cta--wrapper h1,
+    .about__cta--wrapper h3 {
+        font-size: 5em;
+    }
+}
 /*   EXTRA SHIT  */
 /* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
@@ -1329,6 +1388,7 @@ div.wpcf7-validation-errors {
   background-image: url('img/about-1.png');
   width:100%;
   min-height:700px;
+  padding: 4rem 0;
   top:0;
   left:0;
   background-size:cover;
@@ -1632,9 +1692,9 @@ a.comment-reply-link:hover {
     /*max-width:75%;*/
 }
 @media (max-width: 767px) {
-.blurred-container .motto h1 {
-    font-size: 40px;
-}
+    .blurred-container .motto h1 {
+        font-size: 40px;
+    }
 }
 .page-template-about .blurred-container .hero-container {
   margin-top: 140px;
@@ -1645,8 +1705,19 @@ a.comment-reply-link:hover {
 }
 .hero-container__two-col--right {
   float: right;
-  width: 35%;
-  margin-left: 15%;
+  width: 40%;
+}
+@media (max-width: 767px) {
+    .hero-container__two-col--left,
+    .hero-container__two-col--right {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .page-template-about .motto h1,
+    .page-template-about .motto h3 {
+        text-align: left;
+    }
 }
 .hero-container .about-desc {
   margin-top: 20px;
@@ -1657,14 +1728,6 @@ a.comment-reply-link:hover {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #6A6C74;
-}
-.page-template-about .motto h1,
-.page-template-about .motto h3 {
-  text-align: right;
-}
-.page-template-about .motto h1,
-.about__cta--wrapper h1 {
-  font-size: 7em;
 }
 .page-template-home .motto h1,
 .page-template-home .motto h3 {
@@ -1691,11 +1754,31 @@ a.comment-reply-link:hover {
     margin-top: 5px;
 }
 @media (max-width: 991px){
+    .page-template-about .blurred-container .motto h1 {
+        font-size: 5em;
+    }
+    .page-template-about .blurred-container .motto h3 {
+        font-size: 3em;
+    }
     .img-src{
        /*
  background-size: 100%;
         background-position: top;
 */
+    }
+}
+@media (max-width: 767px) {
+    .page-template-about .blurred-container .motto h1,
+    .page-template-about .blurred-container .motto h3 {
+        text-align: left;
+    }
+}
+@media (max-width: 499px) {
+    .page-template-about .blurred-container .motto h1 {
+        font-size: 4em;
+    }
+    .page-template-about .blurred-container .motto h3 {
+        font-size: 3em;
     }
 }
 .main{

@@ -99,12 +99,12 @@ get_header();
     </div>
 </div>
 <div class="row about__cta--wrapper">
-    <div class="col-md-5">
+    <div class="col-sm-12 col-md-6">
        <h3>lets create</h3>
        <h1>something</h1>
        <h1>great.</h1>
     </div>
-    <div class="col-md-5 col-md-push-1">
+    <div class="col-sm-12 col-md-5 col-md-push-1">
         <p>At Brandcave, we don’t sell our time. We sell intellectual capital and business results. We’re able to offer integrated digital marketing services to meet our client’s specific needs. Rather than focusing on overhead, hours and markup, we’re able to focus on value and effectiveness. At the end of the day, our relationships are profitable because our work is strategic and we deliver every project like it was our last.</p>
         <h4><a href="<?php echo get_page_link( get_page_by_title( 'Meet Us' )->ID ); ?>">get started</a></h4>
     </div>
