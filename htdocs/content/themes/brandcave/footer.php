@@ -23,24 +23,22 @@
 			</div>
 			<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
 				<h4>CAPABILITIES</h4>
-				<p><a href="capabilities/inbound-marketing.html">Inbound Marketing</a>
+				<p>
+					<?php $query = new WP_Query(array( 'post_parent' => 7, 'post_type' => 'page')); ?>
+					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+					<a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
 					<br />
-					<a href="capabilities/web-development.html">Web Development</a>
-					<br />
-					<a href="capabilities/video-production.html">Video Production</a>
-					<br />
-					<a href="capabilities/branding-solutions">Branding Solutions</a>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</p>
 			</div>
 			<div class="col-md-2 col-sm-2 col-xs-2">
 				<h4>ABOUT</h4>
-				<p><a href="about.html">About</a>
+				<p>
+					<?php $query = new WP_Query(array( 'post_parent' => 0, 'post_type' => 'page', 'post__not_in' => array(4, 7) )); ?>
+					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+					<a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
 					<br />
-					<a href="blog">Blog</a>
-					<br />
-					<a href="contact">Contact</a>
-					<br />
-					<a href="terms">Terms</a>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</p>
 			</div>
 		</div>
