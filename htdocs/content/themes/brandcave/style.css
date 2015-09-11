@@ -2236,6 +2236,16 @@ a.comment-reply-link:hover {
     background-size:25px;
     float:left;
 }
+.cta-section input[type=submit] {
+    background-image: none;
+    width: auto;
+}
+.wpcf7-form p {
+    width: auto;
+}
+.wpcf7-form br {
+    display: none !important;
+}
 .cta-section input::-webkit-input-placeholder, .seo-section input::-webkit-input-placeholder {
     color: #1d1d26;
     text-transform:uppercase;
@@ -2243,7 +2253,7 @@ a.comment-reply-link:hover {
     font-weight:600;
     letter-spacing:1px;
 }
-.cta-section button, .seo-section button, .comment-form input[type=submit] {
+.cta-section button, .cta-section input[type=submit], .seo-section button, .comment-form input[type=submit] {
     height: 45px;
     padding-top:10px;
     border:none;

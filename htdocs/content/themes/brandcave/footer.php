@@ -76,8 +76,8 @@
 var elementButton = document.querySelector('.elevator');
 var elevator = new Elevator({
 	element: elementButton,
-	mainAudio: './music/elevator.mp3',
-	endAudio:  './music/ding.mp3'
+	mainAudio: './wp-content/themes/brandcave/music/elevator.mp3',
+	endAudio:  './wp-content/themes/brandcave/music/ding.mp3'
 });
 </script>
 

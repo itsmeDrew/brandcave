@@ -111,8 +111,9 @@ get_header();
             <h4>New eBook</h4>
             <h2>Before you decide to redesign your website, read this.</h2>
             <p>Redesigning your website may be one of the biggest challenges you face when it comes to marketing your business. However, when you ask the right questions from the start, you can save time, frustration and money. In this eBook, we discuss 10 essential principles your future website should follow.</p>
-            <input type="text" value="" placeholder="Your Email" class="form-control">
-            <button href="#" class="btn btn-info btn-fill">Download</button>
+            <!-- <input type="text" value="" placeholder="Your Email" class="form-control">
+            <button href="#" class="btn btn-info btn-fill">Download</button> -->
+             <?php echo do_shortcode( '[contact-form-7 id="41" title="eBook Form"]' ); ?>
         </div>
     </div>
 </div>
