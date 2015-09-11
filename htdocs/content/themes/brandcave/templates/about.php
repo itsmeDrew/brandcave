@@ -39,29 +39,75 @@ get_header();
     </div><!--  end navbar -->
 </div> <!-- end menu-dropdown -->
 <div class="row about-row">
-    <div class="col-md-6 about__block about__block--large about__block__cody">
-        <div class="about__block-inner"></div>
-    </div>
-    <div class="col-md-6 about__block about__block--large block--white">
-        <div class="about__block-inner">
-            <h2>cody miles <span class="about-title">| creative director</span></h2>
-            <p>A strong conceptual thinker and hands-on leader, Cody Miles is an Austin-based creative director and co-founder of Brandcave. Responsible for overall vision and strategy, Cody serves as liaison between design and production.</p>
-            <p>A small agency with strong roots in inbound marketing and web design, Cody co-launched Brandcave in September 2015 as a complete resource for web, social video and print. In it’s short life, Brandcave has grown to over 20 national clients.</p>
-            <p>Prior to Brandcave, Cody worked as User Experience Manager at one of Dallas’ fastest growing PR firms and Inbound Marketing Director over a national bank.</p>
-            <p>Cody studied public relations at Sam Houston State University.</p>
+    <div class="js-bio-wrapper">
+        <div class="js-bio bio--wrapper" data-employee="1">
+            <div class="col-md-6 about__block about__block--large about__block--employee employee--one">
+                <div class="about__block-inner"></div>
+            </div>
+            <div class="col-md-6 about__block about__block--large block--white">
+                <div class="about__block-inner">
+                    <h2>cody miles <span class="about-title">| creative director</span></h2>
+                    <p>A strong conceptual thinker and hands-on leader, Cody Miles is an Austin-based creative director and co-founder of Brandcave. Responsible for overall vision and strategy, Cody serves as liaison between design and production.</p>
+                    <p>A small agency with strong roots in inbound marketing and web design, Cody co-launched Brandcave in September 2015 as a complete resource for web, social video and print. In it’s short life, Brandcave has grown to over 20 national clients.</p>
+                    <p>Prior to Brandcave, Cody worked as User Experience Manager at one of Dallas’ fastest growing PR firms and Inbound Marketing Director over a national bank.</p>
+                    <p>Cody studied public relations at Sam Houston State University.</p>
+                </div>
+            </div>
+        </div>
+        <div class="js-bio bio--wrapper" data-employee="2">
+            <div class="col-md-6 about__block about__block--large about__block--employee employee--two">
+                <div class="about__block-inner"></div>
+            </div>
+            <div class="col-md-6 about__block about__block--large block--white">
+                <div class="about__block-inner">
+                    <h2>brett favre <span class="about-title">| creative director</span></h2>
+                    <p>A strong conceptual thinker and hands-on leader, Cody Miles is an Austin-based creative director and co-founder of Brandcave. Responsible for overall vision and strategy, Cody serves as liaison between design and production.</p>
+                    <p>A small agency with strong roots in inbound marketing and web design, Cody co-launched Brandcave in September 2015 as a complete resource for web, social video and print. In it’s short life, Brandcave has grown to over 20 national clients.</p>
+                    <p>Prior to Brandcave, Cody worked as User Experience Manager at one of Dallas’ fastest growing PR firms and Inbound Marketing Director over a national bank.</p>
+                    <p>Cody studied public relations at Sam Houston State University.</p>
+                </div>
+            </div>
+        </div>
+        <div class="js-bio bio--wrapper" data-employee="3">
+            <div class="col-md-6 about__block about__block--large about__block--employee employee--three">
+                <div class="about__block-inner"></div>
+            </div>
+            <div class="col-md-6 about__block about__block--large block--white">
+                <div class="about__block-inner">
+                    <h2>aaron rodgers <span class="about-title">| creative director</span></h2>
+                    <p>A strong conceptual thinker and hands-on leader, Cody Miles is an Austin-based creative director and co-founder of Brandcave. Responsible for overall vision and strategy, Cody serves as liaison between design and production.</p>
+                    <p>A small agency with strong roots in inbound marketing and web design, Cody co-launched Brandcave in September 2015 as a complete resource for web, social video and print. In it’s short life, Brandcave has grown to over 20 national clients.</p>
+                    <p>Prior to Brandcave, Cody worked as User Experience Manager at one of Dallas’ fastest growing PR firms and Inbound Marketing Director over a national bank.</p>
+                    <p>Cody studied public relations at Sam Houston State University.</p>
+                </div>
+            </div>
+        </div>
+        <div class="js-bio bio--wrapper" data-employee="4">
+            <div class="col-md-6 about__block about__block--large about__block--employee employee--four">
+                <div class="about__block-inner"></div>
+            </div>
+            <div class="col-md-6 about__block about__block--large block--white">
+                <div class="about__block-inner">
+                    <h2>clay matthews <span class="about-title">| creative director</span></h2>
+                    <p>A strong conceptual thinker and hands-on leader, Cody Miles is an Austin-based creative director and co-founder of Brandcave. Responsible for overall vision and strategy, Cody serves as liaison between design and production.</p>
+                    <p>A small agency with strong roots in inbound marketing and web design, Cody co-launched Brandcave in September 2015 as a complete resource for web, social video and print. In it’s short life, Brandcave has grown to over 20 national clients.</p>
+                    <p>Prior to Brandcave, Cody worked as User Experience Manager at one of Dallas’ fastest growing PR firms and Inbound Marketing Director over a national bank.</p>
+                    <p>Cody studied public relations at Sam Houston State University.</p>
+                </div>
+            </div>
         </div>
     </div>
     <ul class="about__btn--list">
-        <li class="about__btn--item">
+        <li class="js-bio-btn about__btn--item" data-employee="1">
             <img class="about__btn--img" src="<?php bloginfo(template_url); ?>/img/about-btn-1.png" alt="about-btn-1">
         </li>
-        <li class="about__btn--item">
+        <li class="js-bio-btn about__btn--item" data-employee="2">
             <img class="about__btn--img" src="<?php bloginfo(template_url); ?>/img/about-btn-2.png" alt="about-btn-2">
         </li>
-        <li class="about__btn--item">
+        <li class="js-bio-btn about__btn--item" data-employee="3">
             <img class="about__btn--img" src="<?php bloginfo(template_url); ?>/img/about-btn-3.png" alt="about-btn-3">
         </li>
-        <li class="about__btn--item">
+        <li class="js-bio-btn about__btn--item" data-employee="4">
             <img class="about__btn--img" src="<?php bloginfo(template_url); ?>/img/about-btn-4.png" alt="about-btn-4">
         </li>
     </ul>

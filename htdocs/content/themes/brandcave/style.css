@@ -1249,7 +1249,7 @@ div.wpcf7-validation-errors {
     }
 }
 @media (max-width: 991px){
-    .about__block__cody {
+    .about__block--employee {
         height: 400px;
     }
     .about__block--large {
@@ -1279,7 +1279,19 @@ div.wpcf7-validation-errors {
     text-align: left;
 }
 /* row 1 */
-.about__block__cody {
+.employee--one {
+    background: url(img/about-cody.png) no-repeat;
+    background-size: cover;
+}
+.employee--two {
+    background: url(http://www.csnne.com/sites/csnne/files/2013/07/17/brett-favre-071713.jpg) no-repeat;
+    background-size: cover;
+}
+.employee--three {
+    background: url(img/about-cody.png) no-repeat;
+    background-size: cover;
+}
+.employee--four {
     background: url(img/about-cody.png) no-repeat;
     background-size: cover;
 }
@@ -1394,6 +1406,12 @@ div.wpcf7-validation-errors {
   background-size:cover;
   background-position: center center;
   background-repeat:no-repeat;
+}
+.page-template-about .bio-hide {
+    display: none;
+}
+.page-template-about .bio-show {
+    display: block;
 }
 /* contact page */
 .page-template-contact {

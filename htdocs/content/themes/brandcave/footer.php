@@ -67,6 +67,9 @@
 <script src="<?php bloginfo(template_url); ?>/js/unveil.js" type="text/javascript"></script>
 <script src="<?php bloginfo(template_url); ?>/js/custom.js"></script>
 <script src="<?php bloginfo(template_url); ?>/js/nav.js"></script>
+<?php if (is_page( 'About' ) ): { ?>
+<script src="<?php bloginfo(template_url); ?>/js/bio.js"></script>
+<?php } endif; ?>
 
 <script type="text/javascript">
 	$(document).ready(function() {
