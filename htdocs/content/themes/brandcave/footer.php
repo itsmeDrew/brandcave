@@ -67,9 +67,7 @@
 <script src="<?php bloginfo(template_url); ?>/js/unveil.js" type="text/javascript"></script>
 <script src="<?php bloginfo(template_url); ?>/js/custom.js"></script>
 <script src="<?php bloginfo(template_url); ?>/js/nav.js"></script>
-<?php if (is_page( 'About' ) ): { ?>
 <script src="<?php bloginfo(template_url); ?>/js/bio.js"></script>
-<?php } endif; ?>
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -79,8 +77,8 @@
 var elementButton = document.querySelector('.elevator');
 var elevator = new Elevator({
 	element: elementButton,
-	mainAudio: './wp-content/themes/brandcave/music/elevator.mp3',
-	endAudio:  './wp-content/themes/brandcave/music/ding.mp3'
+	mainAudio: 'http://8ac.977.myftpupload.com/wp-content/themes/brandcave/music/elevator.mp3',
+	endAudio:  'http://8ac.977.myftpupload.com/wp-content/themes/brandcave/music/ding.mp3'
 });
 </script>
 
